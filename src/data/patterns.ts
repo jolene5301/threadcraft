@@ -1,0 +1,177 @@
+export type Pattern = {
+  id: string;
+  title: string;
+  category: string;
+  difficulty: "beginner" | "intermediate" | "advanced";
+  description: string;
+  yarnWeight: string;
+  hookSize: string;
+  instructions: string[];
+  colorSuggestions?: string[];
+  image?: string;
+};
+
+export const patterns: Pattern[] = [
+  {
+    id: "basic-ball",
+    title: "Basic Ball",
+    category: "Basic Shapes",
+    difficulty: "beginner",
+    description: "A simple round ball perfect for amigurumi bodies or decorative elements.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Round 1: Magic ring, 6 sc in ring (6)",
+      "Round 2: Inc in each st around (12)",
+      "Round 3: *Sc, inc* repeat (18)",
+      "Round 4: *2 sc, inc* repeat (24)",
+      "Round 5: *3 sc, inc* repeat (30)",
+      "Rounds 6-10: Sc in each st around (30)",
+      "Round 11: *3 sc, dec* repeat (24)",
+      "Round 12: *2 sc, dec* repeat (18)",
+      "Stuff firmly",
+      "Round 13: *Sc, dec* repeat (12)",
+      "Round 14: Dec around (6)",
+      "Fasten off, close hole",
+    ],
+    colorSuggestions: ["Dusty Rose", "Soft Sage", "Muted Lavender"],
+  },
+  {
+    id: "flat-circle",
+    title: "Flat Circle",
+    category: "Basic Shapes",
+    difficulty: "beginner",
+    description: "A flat circular base perfect for coasters, appliqués, or pattern bases.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Round 1: Magic ring, 6 sc in ring (6)",
+      "Round 2: Inc in each st around (12)",
+      "Round 3: *Sc, inc* repeat (18)",
+      "Round 4: *2 sc, inc* repeat (24)",
+      "Round 5: *3 sc, inc* repeat (30)",
+      "Round 6: *4 sc, inc* repeat (36)",
+      "Round 7: *5 sc, inc* repeat (42)",
+      "Slip stitch to first st, fasten off",
+    ],
+    colorSuggestions: ["Warm Cream", "Soft Sage"],
+  },
+  {
+    id: "cone-shape",
+    title: "Cone Shape",
+    category: "Basic Shapes",
+    difficulty: "beginner",
+    description: "A tapered cone ideal for ice cream cones, party hats, or limb endings.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Round 1: Magic ring, 4 sc in ring (4)",
+      "Round 2: Inc in each st around (8)",
+      "Round 3: Sc in each st around (8)",
+      "Round 4: *Sc, inc* repeat (12)",
+      "Round 5: Sc in each st around (12)",
+      "Round 6: *2 sc, inc* repeat (16)",
+      "Round 7: Sc in each st around (16)",
+      "Round 8: *3 sc, inc* repeat (20)",
+      "Rounds 9-12: Sc in each st around (20)",
+      "Fasten off",
+    ],
+    colorSuggestions: ["Muted Lavender", "Dusty Rose"],
+  },
+  {
+    id: "amigurumi-ear",
+    title: "Simple Ear",
+    category: "Features",
+    difficulty: "beginner",
+    description: "Versatile ear shape for animals and creatures.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Round 1: Magic ring, 4 sc in ring (4)",
+      "Round 2: Inc in each st around (8)",
+      "Round 3: *Sc, inc* repeat (12)",
+      "Rounds 4-5: Sc in each st around (12)",
+      "Do not stuff, flatten and sew to head",
+    ],
+    colorSuggestions: ["Match body color"],
+  },
+  {
+    id: "simple-arm",
+    title: "Simple Arm/Leg",
+    category: "Limbs",
+    difficulty: "intermediate",
+    description: "Basic limb structure for amigurumi dolls and creatures.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Round 1: Magic ring, 5 sc in ring (5)",
+      "Round 2: Inc in each st around (10)",
+      "Rounds 3-4: Sc in each st around (10)",
+      "Round 5: *3 sc, dec* repeat (8)",
+      "Rounds 6-12: Sc in each st around (8)",
+      "Stuff lightly, fasten off leaving long tail for sewing",
+    ],
+    colorSuggestions: ["Soft Sage", "Warm Cream"],
+  },
+  {
+    id: "texture-bobbles",
+    title: "Bobble Texture",
+    category: "Textures",
+    difficulty: "intermediate",
+    description: "Add dimensional texture with bobble stitches.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Bobble stitch: (Yarn over, insert hook, pull up loop, yarn over, pull through 2) 4 times in same st, yarn over, pull through all loops",
+      "Row 1: Ch multiple of 4 + 3",
+      "Row 2: Sc in 2nd ch from hook, sc across",
+      "Row 3: *3 sc, bobble* repeat, end with sc",
+      "Row 4: Sc across",
+      "Repeat Rows 3-4 for pattern",
+    ],
+    colorSuggestions: ["Dusty Rose", "Muted Lavender"],
+  },
+  {
+    id: "color-stripes",
+    title: "Color Stripe Pattern",
+    category: "Color Work",
+    difficulty: "beginner",
+    description: "Classic stripe pattern for adding color variation.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "With Color A: Work 2 rounds",
+      "Switch to Color B: Work 2 rounds",
+      "Switch to Color C: Work 2 rounds",
+      "Repeat sequence as desired",
+      "Tip: Change colors at end of round for clean stripes",
+    ],
+    colorSuggestions: ["Dusty Rose, Soft Sage, Muted Lavender"],
+  },
+  {
+    id: "cube",
+    title: "Basic Cube",
+    category: "Basic Shapes",
+    difficulty: "intermediate",
+    description: "A six-sided cube perfect for blocks, dice, or geometric designs.",
+    yarnWeight: "Worsted",
+    hookSize: "3.5mm (E)",
+    instructions: [
+      "Make 2 squares: Ch 13, sc in 2nd ch from hook, sc 11 more (12 sc), ch 1, turn",
+      "Rows 2-12: Sc 12, ch 1, turn",
+      "Fasten off first square, leave long tail on second",
+      "Sew squares together at edges to form cube",
+      "Stuff before closing final seam",
+    ],
+    colorSuggestions: ["Warm Cream", "Soft Sage"],
+  },
+];
+
+export const categories = [
+  "All",
+  "Basic Shapes",
+  "Limbs",
+  "Features",
+  "Textures",
+  "Color Work",
+];
